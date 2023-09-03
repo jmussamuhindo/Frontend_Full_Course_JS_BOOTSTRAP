@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+     
+        function checkFreeze(deg){
+            const freezDeg=33;
+            if(freezDeg<=deg){
+                return deg + " Temperature is above";
+            }
+            else{
+                return deg + " Temperature is below";
+            }
+        }
+        console.log(checkFreeze(55));
+        console.log(checkFreeze(64));
+        console.log(checkFreeze(-20));
+        console.log(checkFreeze(-40));
+        console.log(checkFreeze(30));
+
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

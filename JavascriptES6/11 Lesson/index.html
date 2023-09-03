@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+       function* eachItem(arr)
+       {
+        for(var i=0; i<arr.length; i++)
+        {
+            yield arr[i];
+        }
+
+       }
+
+       var myNumbers=eachItem([1,2,3,4,5,6,7]);
+       var myNum=setInterval(function(){
+        var myNumber=myNumbers.next();
+        if(myNumber.done){
+            clearInterval(myNum);
+            console.log("these are my numbers")
+        }else{
+            console.log(myNumber.value)
+        }
+       },500);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

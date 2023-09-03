@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="container mt-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" value="checked" id="defaultCheckBox">
+                        <label for="defaultCheckBox" class="form-check-label">Default Checkbox</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" value="checked" id="defaultCheckBox" checked>
+                        <label for="defaultCheckBox" class="form-check-label">Default Checkbox</label>  
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" value="checked" id="defaultCheckBox1" checked>
+                        <label for="defaultCheckBox1" class="form-check-label">Default Checkbox</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input disabled type="checkbox" class="form-check-input" value="checked" id="defaultCheckBox" checked>
+                        <label for="defaultCheckBox" class="form-check-label">Default Checkbox</label>  
+                    </div>
+
+                    <div class="form-check">
+                        <input disabled type="checkbox" class="form-check-input" value="checked" id="defaultCheckBox">
+                        <label for="defaultCheckBox" class="form-check-label">Default Checkbox</label>  
+                    </div>
+
+                    <div class="form-check">
+                        <input disabled type="radio" class="form-check-input" value="Male" name="gender" id="defaultRadio1">
+                        <label for="defaultCheckBox1" class="form-check-label">Male</label>
+                    </div>
+
+                    <div>
+                        <input checked disabled type="radio" class="form-check-input" value="female" name="gender" id="defaultCheckBox2"> 
+                        <label for="defaultCheckBox2" class="form-check-label">Female</label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input type="checkbox" id="switchBoxDefault" class="form-check-input" role="switch">
+                        <label for="switchBoxDefault" class="form-check-label">Default Switch</label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input disabled type="checkbox" id="switchBoxDefault" class="form-check-input" role="switch">
+                        <label for="switchBoxDefault" class="form-check-label">Default Switch</label>
+                    </div>
+
+                    <div class="form-check form-switch">
+                        <input disabled checked type="checkbox" id="switchBoxDefault" class="form-check-input" role="switch">
+                        <label for="switchBoxDefault" class="form-check-label">Default Switch</label>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        var checkbox=document.getElementById('defaultCheckBox1').indeterminate=true;
+    </script>
+
+</body>
+</html>
